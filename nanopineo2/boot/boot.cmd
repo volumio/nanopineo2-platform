@@ -17,4 +17,4 @@ fdt set ethernet0 local-mac-address ${mac_node}
 
 setenv fbcon map:0
 setenv bootargs console=ttyS0,115200 earlyprintk rootwait imgpart=/dev/mmcblk0p2 imgfile=/volumio_current.sqsh fsck.repair=${fsck.repair} fbcon=${fbcon}
-booti ${kernel_addr} ${initrd_addr}:500000 ${dtb_addr}
+booti ${kernel_addr} ${initrd_addr}:503000 ${dtb_addr}
