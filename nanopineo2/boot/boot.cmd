@@ -6,7 +6,7 @@ setenv dtb_addr 0x48000000
 
 fatload mmc 0 ${initrd_addr} volumio.initrd
 fatload mmc 0 ${kernel_addr} Image
-fatload mmc 0 ${dtb_addr} sun50i-h5-${board}.dtb
+fatload mmc 0 ${dtb_addr} sun50i-h5-nanopi-neo2.dtb
 fdt addr ${dtb_addr}
 
 # setup MAC address
